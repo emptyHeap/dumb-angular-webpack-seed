@@ -1,0 +1,7 @@
+# node and bower packages
+/node_modules
+/bower
+
+# vim swap files
+.sw*
+
