@@ -1,0 +1,8 @@
+{
+	"plugins" : {
+		"node": {}
+	}
+	"loadEagerly": [
+		"bower_components/**/*.js"
+	]
+}
