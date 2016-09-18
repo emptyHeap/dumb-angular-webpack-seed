@@ -13,12 +13,21 @@ eslint dependencies with rules may be optional:
   
 you may want to remove unnecessary or use something else?  
 
-[eslint-to-editorconfig](https://github.com/sun1x/eslint-to-editorconfig) 
-may be usefull to create editorconfig file. Next command may be used:
+### [Editorconfig](http://editorconfig.org/)
+
+There is a default .editorconfig file, which must be good enouth, but you 
+may wat to use [eslint-to-editorconfig](https://github.com/sun1x/eslint-to-editorconfig)
+to generate another by you specifig eslint file. If it so, next command may 
+be used:
 ```bash
 nodejs ./node_modules/eslint-to-editorconfig/bin.js
 ```
 
-### 
+### [Babel](https://babeljs.io/)
+for using es6 syntax
 
+### [SASS](http://sass-lang.com/)
+ofc you may want to use [LESS](http://lesscss.org/), if so changing sass to
+less in config files will be enough, so you need `less-loader` instead of
+`sass-loader` for webpack and you'l need node-less i guess
 

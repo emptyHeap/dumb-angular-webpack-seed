@@ -2,9 +2,12 @@ path = require('path')
 const THIRD_PARTY = [ /node_modules/, /bower_components/ ]
 
 module.exports = {
-	entry: './app/index.js',
+	entry: './app/app.js',
 	output: {
-		filename: 'bundle.js'
+		output: {
+			path: __dirname + '/dist',
+			filename: 'bundle.js'
+		}
 	},
 	resolve: {
 		root: [
