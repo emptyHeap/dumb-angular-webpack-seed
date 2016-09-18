@@ -3,6 +3,6 @@
 /bower_components
 
 # vim swap files
-.swp
-.swo
+*.swp
+*.swo
 

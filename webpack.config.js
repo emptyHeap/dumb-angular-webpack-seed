@@ -2,7 +2,7 @@ path = require('path')
 const THIRD_PARTY = [ /node_modules/, /bower_components/ ]
 
 module.exports = {
-	entry: './app/entry.js',
+	entry: './app/index.js',
 	output: {
 		filename: 'bundle.js'
 	},
@@ -15,8 +15,9 @@ module.exports = {
 	},
 	module: {
 		loaders: [
-			{ test: /\.js$/, exclude: THIRD_PARTY, loader: 'babel-loader' },
+			{ test: /\.js$/, exclude: THIRD_PARTY, loader: 'babel-loader!eslint-loader' },
 			{ test: /\.css$/, loader: "style!css" },
+			{ test: /\.sass$/, loader: "style!css!sass" },
 			{ test   : /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
 				loader : 'file-loader' }
 
