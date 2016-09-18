@@ -1,7 +1,7 @@
 {
-  "name": "simple es6 frontend seed with salitair and ladies",
+  "name": "dumb angular webpack seed",
   "version": "0.0.1",
-  "description": "simple calc with angularjs help",
+  "description": "simple es6 frontend seed for angular with solitaire and ladies",
   "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,5 +28,9 @@
     "node-sass": "^3.10.0",
     "sass-loader": "^4.0.2",
     "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angularjs": "0.0.1"
   }
 }
